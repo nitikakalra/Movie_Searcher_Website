@@ -1,0 +1,106 @@
+/* Main Wrapper for MovieDetails */
+.movie-details-wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title Styling */
+.movie-details-wrapper h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #101010;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+/* Image Container */
+.movie-image-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.movie-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for Image */
+.movie-image:hover {
+  transform: scale(1.05);
+}
+
+/* Movie Info */
+.movie-info {
+  padding: 20px;
+}
+
+.movie-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.movie-year, .movie-rating, .movie-plot {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.movie-rating {
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.movie-plot {
+  font-size: 16px;
+  color: #ddd;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+/* Button Styling */
+.btn-close {
+  background-color: rgb(255, 99, 71);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-close:hover {
+  background-color: rgb(220, 80, 58);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .movie-details-wrapper {
+    padding: 20px;
+  }
+
+  .movie-title {
+    font-size: 28px;
+  }
+
+  .movie-year, .movie-rating {
+    font-size: 16px;
+  }
+
+  .movie-plot {
+    font-size: 14px;
+  }
+}
